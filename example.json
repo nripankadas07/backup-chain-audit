@@ -1,0 +1,28 @@
+{
+  "snapshots": [
+    {
+      "id": "base",
+      "parent": null,
+      "verified": true,
+      "bytes": 100
+    },
+    {
+      "id": "delta",
+      "parent": "base",
+      "verified": true,
+      "bytes": 20
+    },
+    {
+      "id": "obsolete",
+      "parent": null,
+      "verified": true,
+      "bytes": 80
+    }
+  ],
+  "retain": [
+    "delta"
+  ],
+  "delete": [
+    "obsolete"
+  ]
+}
